@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class="banner">
+	<h1>this is about page </h1>
+	<h2>here we are going to add contact manager </h2>
+
+<div th:if="${session.message != null}">
+    <div th:class="${session.message.type}">
+        <p th:text="${session.message.content}"></p>
+    </div>
+</div>
+ 
+
+	</section>
+</body>
+</html>
